@@ -20,11 +20,11 @@ program test_krome
   real*8::xdust(nd),adust(nd),xdusti(nd),data(imax,nd),dataT(imax)
   integer::i,j,k
   spy = 3600. * 24. * 365. !seconds per year
-  Tgas = 6.62860517646d0 !gas temperature (K)
-  xH = 263.168368829d0 !Hydrogen density
+  Tgas = 8.84527005344d0 !gas temperature (K)
+  xH = 0.0647991238559d0 !Hydrogen density
 
   !user commons for opacity and CR rate
-  call krome_set_user_av(0.115197440677d0) !opacity Av (#)
+  call krome_set_user_av(20.8202931667d0) !opacity Av (#)
   call krome_set_user_crate(1.3d-17) !CR rate (1/s)
   call krome_set_user_gas_dust_ratio(1d2) !gas/dust
   call krome_init()
